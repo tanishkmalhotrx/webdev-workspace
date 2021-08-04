@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MySite | Home</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html"></a>HOME</li>
+                    <li><a href="index.html"></a>MENU</li>
+                    <li><a href="index.html"></a>WHAT'S NEW</li>
+                    <li><a href="index.html"></a>CONTACT</li>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just Coffee<br>It's <span>Starbucks</span></h2>
+                    <br>
+                    <p>We are passionate purveyors of coffee and everything else that goes with a rewarding 
+                        coffeehouse experience. We also offer a selection of premium Tazo® teas, fine pastries 
+                        and other delectable treats to please the taste buds. And the music you hear in store is 
+                        chosen for its artistry and appeal. People come to Starbucks to chat, meet up or work.</p>
+                    <br>
+                    <a href="index.html" target="blank">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="images/img1.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png')"></li>
+                <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png')"></li>
+                <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png')"></li>
+            </ul>
+            <ul class="sci">
+                <li><a href="https://www.instagram.com/starbucksindia/" target="blank"><img src="images/instagram.png"></a></li>
+                <li><a href="https://www.facebook.com/Starbucks/" target="blank"><img src="images/facebook.png"></a></li>
+                <li><a href="https://twitter.com/StarbucksIndia" target="blank"><img src="images/twitter.png"></a></li>
+            </ul>
+        </section>
+
+
+        <script type="text/javascript">
+            function imgSlider(anything){
+                document.querySelector('.starbucks').src = anything;
+            }
+        </script>
+    </body>
+</html>
